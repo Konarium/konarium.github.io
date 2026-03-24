@@ -1,0 +1,677 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Konarium Terms of Service</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="9465e0e3-e33a-4d0a-99f2-5d6bd2ef0f65" class="page sans"><header><h1 class="page-title">Konarium Terms of Service</h1><p class="page-description"></p></header><div class="page-body"><p id="d2614679-7336-4b82-a2c3-789929e0769d" class=""><strong>TERMS OF SERVICE</strong></p><p id="80d0acee-19a5-4b1f-968d-e8ed199bacc1" class=""><strong>Last updated: March 8, 2024</strong></p><ol type="1" id="e6f6d77f-f784-47b3-8054-5b64853ba97d" class="numbered-list" start="1"><li><strong></strong><span style="border-bottom:0.05em solid"><strong>Introduction</strong></span></li></ol><p id="0adad6c3-cf6b-4fde-a518-4adca1895b66" class="">Welcome to <strong>Konarium, LLC</strong> (“<strong>Company</strong>”, “<strong>we</strong>”, “<strong>our</strong>”, “<strong>us</strong>”)! These Terms of Service (“<strong>Terms</strong>”, “<strong>Terms of Service</strong>”) govern your use of our mobile applications and games operated by Konarium, LLC</p><p id="03fba727-0320-4213-9267-22cac1462044" class="">Our Privacy Policy also governs your use of our Service and explains how we collect, safeguard and disclose information that results from your use of our web pages. Please read it here <a href="https://konarium.com/privacy-policy/">https://konarium.com/privacy-policy/</a>.</p><p id="d648fab5-796f-47c2-b921-251a587c1e37" class="">Your agreement with us includes these Terms and our Privacy Policy (“<strong>Agreements</strong>”). You acknowledge that you have read and understood Agreements, and agree to be bound of them.</p><p id="f0c23603-d7f2-423d-8905-b9a2626e6d15" class="">If you do not agree with (or cannot comply with) Agreements, then you may not use the Service, but please let us know by emailing at support@konarium.com so we can try to find a solution. These Terms apply to all visitors, users and others who wish to access or use Service.</p><p id="88e7f92b-4c6d-4906-b3ae-873bb49f92fb" class="">Thank you for being responsible.</p><ol type="1" id="c9251fa5-0b9f-4dda-9d32-233e5b270c61" class="numbered-list" start="1"><li><strong></strong><span style="border-bottom:0.05em solid"><strong>Communications</strong></span></li></ol><p id="5baf12d9-4ec7-47fd-bc8f-4ede8e26d788" class="">By using our Service, you agree to subscribe to newsletters, marketing or promotional materials and other information we may send. However, you may opt out of receiving any, or all, of these communications from us by following the unsubscribe link or by emailing at.</p><ol type="1" id="dca44b59-304e-4419-adae-037a17f76be7" class="numbered-list" start="1"><li><strong></strong><span style="border-bottom:0.05em solid"><strong>Purchases</strong></span></li></ol><p id="eda7a687-06df-4e1f-80a5-c6d6009a4c3a" class="">If you wish to purchase any product or service made available through Service (“<strong>Purchase</strong>”), you may be asked to supply certain information relevant to your Purchase including, without limitation, your credit card number, the expiration date of your credit card, your billing address, and your shipping information.</p><p id="8ec3a332-eaad-459b-b95d-eba8bee00ca8" class="">You represent and warrant that: (i) you have the legal right to use any credit card(s) or other payment method(s) in connection with any Purchase; and that (ii) the information you supply to us is true, correct and complete.</p><p id="fa566196-fa96-46e2-9a8e-65b4198eac63" class="">We may employ the use of third party services for the purpose of facilitating payment and the completion of Purchases. By submitting your information, you grant us the right to provide the information to these third parties subject to our Privacy Policy.</p><p id="1bf89d5d-9345-4825-a2a4-2ed2ce79414f" class="">We reserve the right to refuse or cancel your order at any time for reasons including but not limited to: product or service availability, errors in the description or price of the product or service, error in your order or other reasons.</p><p id="a202a0da-4cb6-4e8c-9559-eceb0fb5b1d1" class="">We reserve the right to refuse or cancel your order if fraud or an unauthorized or illegal transaction is suspected.</p><ol type="1" id="7f490cef-b59f-4cb0-ad2a-e9f162205685" class="numbered-list" start="1"><li><strong></strong><span style="border-bottom:0.05em solid"><strong>Contests, Sweepstakes and Promotions</strong></span></li></ol><p id="7377474b-b3ec-46f3-81e8-adcaf945a37d" class="">Any contests, sweepstakes or other promotions (collectively, “<strong>Promotions</strong>”) made available through Service may be governed by rules that are separate from these Terms of Service. If you participate in any Promotions, please review the applicable rules as well as our Privacy Policy. If the rules for a Promotion conflict with these Terms of Service, Promotion rules will apply.</p><ol type="1" id="209ddd23-3adf-4a42-921a-918a7d47a916" class="numbered-list" start="1"><li><strong></strong><span style="border-bottom:0.05em solid"><strong>Subscriptions</strong></span></li></ol><p id="12ddff88-3d3e-4c23-adce-9b4d61010b61" class="">Some parts of Service are billed on a subscription basis (“<strong>Subscription(s)</strong>”). You will be billed in advance on a recurring and periodic basis (“<strong>Billing Cycle</strong>”). Billing cycles are set on a weekly, monthly or yearly basis.</p><p id="630053de-ef1f-4acb-aa7f-9e3d29bf68be" class="">At the end of each Billing Cycle, your Subscription will automatically renew under the exact same conditions unless you cancel it or Konarium, LLC cancels it. You may cancel your Subscription renewal either through your online account management page or by contacting Konarium, LLC customer support team.</p><p id="35d5d804-57ca-42af-84e2-e0bf3bf1a26c" class="">A valid payment method, including credit card, is required to process the payment for your subscription. You shall provide Konarium, LLC with accurate and complete billing information including full name, address, state, zip code, telephone number, and a valid payment method information. By submitting such payment information, you automatically authorize Konarium, LLC to charge all Subscription fees incurred through your account to any such payment instruments.</p><p id="77bcdbba-9ca9-4ca8-911d-ac709021ab32" class="">Should automatic billing fail to occur for any reason, Konarium, LLC will issue an electronic invoice indicating that you must proceed manually, within a certain deadline date, with the full payment corresponding to the billing period as indicated on the invoice.</p><ol type="1" id="f65aae73-b1e1-4625-b46d-a85892eb5a6e" class="numbered-list" start="1"><li><strong></strong><span style="border-bottom:0.05em solid"><strong>Fee Changes</strong></span></li></ol><p id="b86a11e8-76e5-42a0-bb4b-f8a37f0ca321" class="">Konarium, LLC, in its sole discretion and at any time, may modify Subscription fees for the Subscriptions. Any Subscription fee change will become effective at the end of the then-current Billing Cycle.</p><p id="6e395301-8d66-493d-b1ff-1e5d55e98742" class="">Konarium, LLC will provide you with a reasonable prior notice of any change in Subscription fees to give you an opportunity to terminate your Subscription before such change becomes effective.</p><p id="0b0cf071-b991-4cb2-acbb-d149235dc5de" class="">Your continued use of Service after Subscription fee change comes into effect constitutes your agreement to pay the modified Subscription fee amount.</p><ol type="1" id="703a83e0-1565-4ff0-85ee-2cac0a13c8a1" class="numbered-list" start="1"><li><strong></strong><span style="border-bottom:0.05em solid"><strong>Refunds</strong></span></li></ol><p id="604f48e7-0725-4ccc-985c-ceca6fd46d87" class="">Except when required by law, paid Subscription fees are non-refundable.</p><ol type="1" id="499f4001-bc77-40c1-87a4-efdcc906d4b1" class="numbered-list" start="1"><li><strong></strong><span style="border-bottom:0.05em solid"><strong>Content</strong></span></li></ol><p id="963d920c-0dd9-4579-a0d0-ebff84ccc1bd" class="">Our Service allows you to post, link, store, share and otherwise make available certain information, text, graphics, videos, or other material (“<strong>Content</strong>”). You are responsible for Content that you post on or through Service, including its legality, reliability, and appropriateness.</p><p id="086ab8a2-bdc0-47c6-87ff-3ea1ed21255f" class="">By posting Content on or through Service, You represent and warrant that: (i) Content is yours (you own it) and/or you have the right to use it and the right to grant us the rights and license as provided in these Terms, and (ii) that the posting of your Content on or through Service does not violate the privacy rights, publicity rights, copyrights, contract rights or any other rights of any person or entity. We reserve the right to terminate the account of anyone found to be infringing on a copyright.</p><p id="ba37c23d-a272-42a6-8ae9-d0f002646c4e" class="">You retain any and all of your rights to any Content you submit, post or display on or through Service and you are responsible for protecting those rights. We take no responsibility and assume no liability for Content you or any third party posts on or through Service. However, by posting Content using Service you grant us the right and license to use, modify, publicly perform, publicly display, reproduce, and distribute such Content on and through Service. You agree that this license includes the right for us to make your Content available to other users of Service, who may also use your Content subject to these Terms.</p><p id="0faa56ce-7bc3-4d77-a1b4-0b7de9ac3a4f" class="">Konarium, LLC has the right but not the obligation to monitor and edit all Content provided by users.</p><p id="4b5d2193-d2ca-4e78-9aae-6a24be3450a3" class="">In addition, Content found on or through this Service are the property of Konarium, LLC or used with permission. You may not distribute, modify, transmit, reuse, download, repost, copy, or use said Content, whether in whole or in part, for commercial purposes or for personal gain, without express advance written permission from us.</p><ol type="1" id="0cec9c42-1594-4e2b-bcba-1d5ed5bc486e" class="numbered-list" start="1"><li><strong></strong><span style="border-bottom:0.05em solid"><strong>Prohibited Uses</strong></span></li></ol><p id="b6309cd3-43a1-42ef-8c01-b76e4ea9b1ae" class="">You may use Service only for lawful purposes and in accordance with Terms. You agree not to use Service:</p><ul id="959277de-51e8-4792-82c0-4c5326d97768" class="bulleted-list"><li style="list-style-type:disc">In any way that violates any applicable national or international law or regulation.</li></ul><ul id="f2adef4d-c2e6-46d1-bd3e-c61cf7a8afa1" class="bulleted-list"><li style="list-style-type:disc">For the purpose of exploiting, harming, or attempting to exploit or harm minors in any way by exposing them to inappropriate content or otherwise.</li></ul><ul id="ee3bfd2d-99e8-4207-8a50-f63dec7c283e" class="bulleted-list"><li style="list-style-type:disc">To transmit, or procure the sending of, any advertising or promotional material, including any “junk mail”, “chain letter,” “spam,” or any other similar solicitation.</li></ul><ul id="0994f9f1-18eb-45f4-a454-9627ba5f2418" class="bulleted-list"><li style="list-style-type:disc">To impersonate or attempt to impersonate Company, a Company employee, another user, or any other person or entity.</li></ul><ul id="61b86122-b638-4e92-99f4-6534f24186a1" class="bulleted-list"><li style="list-style-type:disc">In any way that infringes upon the rights of others, or in any way is illegal, threatening, fraudulent, or harmful, or in connection with any unlawful, illegal, fraudulent, or harmful purpose or activity.</li></ul><ul id="263aa2d9-18e3-4b8c-8012-9e12f56d1904" class="bulleted-list"><li style="list-style-type:disc">To engage in any other conduct that restricts or inhibits anyone’s use or enjoyment of Service, or which, as determined by us, may harm or offend Company or users of Service or expose them to liability.</li></ul><p id="14f22d50-131c-4d93-a08f-64dc1fe467a3" class="">Additionally, you agree not to:</p><ul id="4fd8624a-8c7c-448f-8a13-e2a0183aa79e" class="bulleted-list"><li style="list-style-type:disc">Use Service in any manner that could disable, overburden, damage, or impair Service or interfere with any other party’s use of Service, including their ability to engage in real time activities through Service.</li></ul><ul id="afa96cd0-1c98-4e9d-b0d7-f3fbf29fb4f0" class="bulleted-list"><li style="list-style-type:disc">Use any robot, spider, or other automatic device, process, or means to access Service for any purpose, including monitoring or copying any of the material on Service.</li></ul><ul id="70ed71a5-ca46-4039-941b-1300f2e65368" class="bulleted-list"><li style="list-style-type:disc">Use any manual process to monitor or copy any of the material on Service or for any other unauthorized purpose without our prior written consent.</li></ul><ul id="05a8ec6e-5ff7-484c-bff4-93bf5b8cab15" class="bulleted-list"><li style="list-style-type:disc">Use any device, software, or routine that interferes with the proper working of Service.</li></ul><ul id="58d49863-3be7-4fbd-86c8-348ce8c9ee90" class="bulleted-list"><li style="list-style-type:disc">Introduce any viruses, trojan horses, worms, logic bombs, or other material which is malicious or technologically harmful.</li></ul><ul id="33eeebfd-8187-47c0-ba6f-2be3057d29d4" class="bulleted-list"><li style="list-style-type:disc">Attempt to gain unauthorized access to, interfere with, damage, or disrupt any parts of Service, the server on which Service is stored, or any server, computer, or database connected to Service.</li></ul><ul id="b8abd3a7-9ff3-4765-9a94-785c519fc8a0" class="bulleted-list"><li style="list-style-type:disc">Attack Service via a denial-of-service attack or a distributed denial-of-service attack.</li></ul><ul id="81e14004-9c32-4656-be7d-c41157b54afb" class="bulleted-list"><li style="list-style-type:disc">Take any action that may damage or falsify Company rating.</li></ul><ul id="00cf3aef-0be1-4ed3-b6e6-98464eeb2814" class="bulleted-list"><li style="list-style-type:disc">Otherwise attempt to interfere with the proper working of Service.</li></ul><ol type="1" id="67bd7deb-021c-48a6-8572-4fee53ebd297" class="numbered-list" start="1"><li><strong></strong><span style="border-bottom:0.05em solid"><strong>Analytics</strong></span></li></ol><p id="f03e1a6b-11b8-4c52-875f-c117eef7d097" class="">We may use third-party Service Providers to monitor and analyze the use of our Service.</p><p id="f20faa9a-dcad-40b9-8693-0428ba612932" class=""><strong>Google Analytics</strong></p><p id="c558c120-f92c-4e81-ab82-f5933cdb6ac6" class="">Google Analytics is a web analytics service offered by Google that tracks and reports website traffic. Google uses the data collected to track and monitor the use of our Service. This data is shared with other Google services. Google may use the collected data to contextualise and personalise the ads of its own advertising network.</p><p id="e3c1c100-0a54-4916-ada8-2e0ce5086002" class="">For more information on the privacy practices of Google, please visit the Google Privacy Terms web page: <a href="https://policies.google.com/privacy?hl=en">https://policies.google.com/privacy?hl=en</a></p><p id="2136c368-2bdd-4e78-aee1-ef975303cad0" class="">We also encourage you to review the Google&#x27;s policy for safeguarding your data: <a href="https://support.google.com/analytics/answer/6004245">https://support.google.com/analytics/answer/6004245</a>.</p><p id="2b163c91-aacc-44ec-9f94-fdf60734afd5" class=""><strong>Firebase</strong></p><p id="971c6e64-0a19-4f32-a1fe-8d8df60f8f26" class="">Firebase is analytics service provided by Google Inc.</p><p id="d5ec40cf-793a-42ea-821c-9f247ff8dfe3" class="">You may opt-out of certain Firebase features through your mobile device settings, such as your device advertising settings or by following the instructions provided by Google in their Privacy Policy: <a href="https://policies.google.com/privacy?hl=en">https://policies.google.com/privacy?hl=en</a></p><p id="09c7305b-e59b-4f39-8249-453e2b4e6a94" class="">For more information on what type of information Firebase collects, please visit the Google Privacy Terms web page: <a href="https://policies.google.com/privacy?hl=en">https://policies.google.com/privacy?hl=en</a></p><p id="6c69d920-c931-4f03-b63d-1691d052ecf7" class=""><strong>Unity Analytics</strong></p><p id="20fc162d-666c-43cf-99da-abe2a671abe0" class="">Unity Analytics is provided by Unity Technologies.</p><p id="db08517a-77d2-414f-9617-888f604bcbf5" class="">For more information on what type of information Unity Analytics collects, please visit their Privacy Policy page: <a href="https://unity3d.com/legal/privacy-policy">hhttps://unity3d.com/legal/privacy-policy</a></p><ol type="1" id="8d6eb41a-7784-49a9-aea7-4b4d7a95e326" class="numbered-list" start="1"><li><strong></strong><span style="border-bottom:0.05em solid"><strong>No Use By Minors</strong></span></li></ol><p id="19301bee-a906-405d-99f0-2ab11a9e33d9" class="">Service is intended only for access and use by individuals at least eighteen (18) years old. By accessing or using any of Company, you warrant and represent that you are at least eighteen (18) years of age and with the full authority, right, and capacity to enter into this agreement and abide by all of the terms and conditions of Terms. If you are not at least eighteen (18) years old, you are prohibited from both the access and usage of Service.</p><ol type="1" id="5184f116-3d62-4ef7-af47-15fc2eec2cba" class="numbered-list" start="1"><li><strong></strong><span style="border-bottom:0.05em solid"><strong>Accounts</strong></span></li></ol><p id="1f0b2fe9-b99f-42f8-85ba-8609528c0938" class="">When you create an account with us, you guarantee that you are above the age of 18, and that the information you provide us is accurate, complete, and current at all times. Inaccurate, incomplete, or obsolete information may result in the immediate termination of your account on Service.</p><p id="49ea2115-79f8-4f36-ac6a-1551d95ba12a" class="">You are responsible for maintaining the confidentiality of your account and password, including but not limited to the restriction of access to your computer and/or account. You agree to accept responsibility for any and all activities or actions that occur under your account and/or password, whether your password is with our Service or a third-party service. You must notify us immediately upon becoming aware of any breach of security or unauthorized use of your account.</p><p id="306420d5-bc51-4480-90f9-53349c3ef8ed" class="">You may not use as a username the name of another person or entity or that is not lawfully available for use, a name or trademark that is subject to any rights of another person or entity other than you, without appropriate authorization. You may not use as a username any name that is offensive, vulgar or obscene.</p><p id="6c5fcc9d-43f0-4679-86f6-bf292e2c17f4" class="">We reserve the right to refuse service, terminate accounts, remove or edit content, or cancel orders in our sole discretion.</p><ol type="1" id="bcaa7061-70db-4c3e-9239-3de0a72c0f80" class="numbered-list" start="1"><li><strong></strong><span style="border-bottom:0.05em solid"><strong>Intellectual Property</strong></span></li></ol><p id="55dd2ba1-168c-414c-9288-d9c7648f931e" class="">Service and its original content (excluding Content provided by users), features and functionality are and will remain the exclusive property of Konarium, LLC and its licensors. Service is protected by copyright, trademark, and other laws of the United States and foreign countries. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of Konarium, LLC.</p><ol type="1" id="9c978652-d954-4048-8e06-fd2109fbfdd7" class="numbered-list" start="1"><li><strong></strong><span style="border-bottom:0.05em solid"><strong>Copyright Policy</strong></span></li></ol><p id="d26961e1-aef7-4edb-ad82-3030b23bc9d3" class="">We respect the intellectual property rights of others. It is our policy to respond to any claim that Content posted on Service infringes on the copyright or other intellectual property rights (“<strong>Infringement</strong>”) of any person or entity.</p><p id="1c35d8e1-a44e-43db-8f1d-830d5bfbad3b" class="">If you are a copyright owner, or authorized on behalf of one, and you believe that the copyrighted work has been copied in a way that constitutes copyright infringement, please submit your claim via email to support@konarium.com, with the subject line: “Copyright Infringement” and include in your claim a detailed description of the alleged Infringement as detailed below, under “DMCA Notice and Procedure for Copyright Infringement Claims”</p><p id="6817646f-728b-4f8f-9cec-7fd7e7d3b862" class="">You may be held accountable for damages (including costs and attorneys&#x27; fees) for misrepresentation or bad-faith claims on the infringement of any Content found on and/or through Service on your copyright.</p><ol type="1" id="e89ff325-f2d4-4672-812b-bb0c8380479e" class="numbered-list" start="1"><li><strong></strong><span style="border-bottom:0.05em solid"><strong>DMCA Notice and Procedure for Copyright Infringement Claims</strong></span></li></ol><p id="998b7f4c-c129-4e4c-9efa-3cc17d3a99ef" class="">You may submit a notification pursuant to the Digital Millennium Copyright Act (DMCA) by providing our Copyright Agent with the following information in writing (see 17 U.S.C 512(c)(3) for further detail):</p><ul id="df4d56b3-8e0f-4ddd-97fe-93db05d35f16" class="bulleted-list"><li style="list-style-type:disc">an electronic or physical signature of the person authorized to act on behalf of the owner of the copyright&#x27;s interest;</li></ul><ul id="58af45af-4b1e-44aa-9b8e-fa8369bc5a67" class="bulleted-list"><li style="list-style-type:disc">a description of the copyrighted work that you claim has been infringed, including the URL (i.e., web page address) of the location where the copyrighted work exists or a copy of the copyrighted work;</li></ul><ul id="cd48b88e-bcc8-4112-8f58-0d9055050aaa" class="bulleted-list"><li style="list-style-type:disc">identification of the URL or other specific location on Service where the material that you claim is infringing is located;</li></ul><ul id="8da70000-fe6c-438c-9ae5-7817392b136f" class="bulleted-list"><li style="list-style-type:disc">your address, telephone number, and email address;</li></ul><ul id="143bae5f-9485-4bc0-a94e-4af78e7aafb7" class="bulleted-list"><li style="list-style-type:disc">a statement by you that you have a good faith belief that the disputed use is not authorized by the copyright owner, its agent, or the law;</li></ul><ul id="c14dded8-aff1-4bb3-8e2c-27a05b3574f4" class="bulleted-list"><li style="list-style-type:disc">a statement by you, made under penalty of perjury, that the above information in your notice is accurate and that you are the copyright owner or authorized to act on the copyright owner&#x27;s behalf.</li></ul><p id="5f95e144-617c-4e0a-836b-ce05e5ebdf2b" class="">You can contact our Copyright Agent via email at support@konarium.com</p><ol type="1" id="b378f7dd-8c38-45c4-95ed-35f0f31d88d3" class="numbered-list" start="1"><li><strong></strong><span style="border-bottom:0.05em solid"><strong>Error Reporting and Feedback</strong></span></li></ol><p id="abbbe6cc-ece2-4075-985c-276e9dc60973" class="">You may provide us either directly at support@konarium.com or via third party sites and tools with information and feedback concerning errors, suggestions for improvements, ideas, problems, complaints, and other matters related to our Service (“<strong>Feedback</strong>”). You acknowledge and agree that: (i) you shall not retain, acquire or assert any intellectual property right or other right, title or interest in or to the Feedback; (ii) Company may have development ideas similar to the Feedback; (iii) Feedback does not contain confidential information or proprietary information from you or any third party; and (iv) Company is not under any obligation of confidentiality with respect to the Feedback. In the event the transfer of the ownership to the Feedback is not possible due to applicable mandatory laws, you grant Company and its affiliates an exclusive, transferable, irrevocable, free-of-charge, sub-licensable, unlimited and perpetual right to use (including copy, modify, create derivative works, publish, distribute and commercialize) Feedback in any manner and for any purpose.</p><p id="db8c086d-dd7e-409f-9827-3d01bec1290b" class="">The third party sites and tools mentioned above include the following:</p><p id="44c1fba3-e4dd-4a58-a6cd-512c84c7b18b" class=""><strong>Firebase Crashlytics</strong></p><p id="6ed6d805-c59b-44bc-84fc-e2cd2259c3c2" class="">Firebase Crashlytics is bug reporting service provided by Google Inc.</p><p id="96298943-c090-419e-a976-b3abfcbcb959" class="">You may opt-out of certain Firebase features through your mobile device settings, such as your device advertising settings or by following the instructions provided by Google in their Privacy Policy: <a href="https://policies.google.com/privacy?hl=en">https://policies.google.com/privacy?hl=en</a></p><p id="87a0f694-b5fa-4225-97a6-7861016ac8a6" class="">For more information on what type of information Firebase collects, please visit the Google Privacy Terms web page: <a href="https://policies.google.com/privacy?hl=en">https://policies.google.com/privacy?hl=en</a></p><ol type="1" id="be729081-a0e7-423a-9952-adae5cac250c" class="numbered-list" start="1"><li><strong></strong><span style="border-bottom:0.05em solid"><strong>Links To Other Web Sites</strong></span></li></ol><p id="0819917d-d737-4226-89f8-c6526a45e13d" class="">Our Service may contain links to third party web sites or services that are not owned or controlled by Konarium, LLC</p><p id="020a0827-404c-4107-8fed-46b67694503e" class="">Konarium, LLC has no control over, and assumes no responsibility for the content, privacy policies, or practices of any third party web sites or services. We do not warrant the offerings of any of these entities/individuals or their websites.</p><p id="ad5c05d3-c423-478e-b0d6-07e8aa705ab9" class="">YOU ACKNOWLEDGE AND AGREE THAT Konarium, LLC SHALL NOT BE RESPONSIBLE OR LIABLE, DIRECTLY OR INDIRECTLY, FOR ANY DAMAGE OR LOSS CAUSED OR ALLEGED TO BE CAUSED BY OR IN CONNECTION WITH USE OF OR RELIANCE ON ANY SUCH CONTENT, GOODS OR SERVICES AVAILABLE ON OR THROUGH ANY SUCH THIRD PARTY WEB SITES OR SERVICES.</p><p id="25fc9f5b-8da5-439b-b731-ba31b0b3af81" class="">WE STRONGLY ADVISE YOU TO READ THE TERMS OF SERVICE AND PRIVACY POLICIES OF ANY THIRD PARTY WEB SITES OR SERVICES THAT YOU VISIT.</p><ol type="1" id="03855c4f-13f0-420d-91f5-281fb16875f7" class="numbered-list" start="1"><li><strong></strong><span style="border-bottom:0.05em solid"><strong>Disclaimer Of Warranty</strong></span></li></ol><p id="f980bf8b-4fc3-4610-8e94-39c5ec42ab1b" class="">THESE SERVICES ARE PROVIDED BY COMPANY ON AN “AS IS” AND “AS AVAILABLE” BASIS. COMPANY MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, AS TO THE OPERATION OF THEIR SERVICES, OR THE INFORMATION, CONTENT OR MATERIALS INCLUDED THEREIN. YOU EXPRESSLY AGREE THAT YOUR USE OF THESE SERVICES, THEIR CONTENT, AND ANY SERVICES OR ITEMS OBTAINED FROM US IS AT YOUR SOLE RISK.</p><p id="6ba6c016-7695-415a-ae9b-827f8074c163" class="">NEITHER COMPANY NOR ANY PERSON ASSOCIATED WITH COMPANY MAKES ANY WARRANTY OR REPRESENTATION WITH RESPECT TO THE COMPLETENESS, SECURITY, RELIABILITY, QUALITY, ACCURACY, OR AVAILABILITY OF THE SERVICES. WITHOUT LIMITING THE FOREGOING, NEITHER COMPANY NOR ANYONE ASSOCIATED WITH COMPANY REPRESENTS OR WARRANTS THAT THE SERVICES, THEIR CONTENT, OR ANY SERVICES OR ITEMS OBTAINED THROUGH THE SERVICES WILL BE ACCURATE, RELIABLE, ERROR-FREE, OR UNINTERRUPTED, THAT DEFECTS WILL BE CORRECTED, THAT THE SERVICES OR THE SERVER THAT MAKES IT AVAILABLE ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS OR THAT THE SERVICES OR ANY SERVICES OR ITEMS OBTAINED THROUGH THE SERVICES WILL OTHERWISE MEET YOUR NEEDS OR EXPECTATIONS.</p><p id="73b59ea3-d6b7-4db4-9417-181960cb210a" class="">COMPANY HEREBY DISCLAIMS ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, STATUTORY, OR OTHERWISE, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY, NON-INFRINGEMENT, AND FITNESS FOR PARTICULAR PURPOSE.</p><p id="3bedc34a-3483-41d8-ad6f-175cbb24b10c" class="">THE FOREGOING DOES NOT AFFECT ANY WARRANTIES WHICH CANNOT BE EXCLUDED OR LIMITED UNDER APPLICABLE LAW.</p><ol type="1" id="a6849156-c077-4dfd-84fc-ec4af718972c" class="numbered-list" start="1"><li><strong></strong><span style="border-bottom:0.05em solid"><strong>Limitation Of Liability</strong></span></li></ol><p id="5ef23cdf-d416-4731-8698-edd490867d41" class="">EXCEPT AS PROHIBITED BY LAW, YOU WILL HOLD US AND OUR OFFICERS, DIRECTORS, EMPLOYEES, AND AGENTS HARMLESS FOR ANY INDIRECT, PUNITIVE, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGE, HOWEVER IT ARISES (INCLUDING ATTORNEYS&#x27; FEES AND ALL RELATED COSTS AND EXPENSES OF LITIGATION AND ARBITRATION, OR AT TRIAL OR ON APPEAL, IF ANY, WHETHER OR NOT LITIGATION OR ARBITRATION IS INSTITUTED), WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE, OR OTHER TORTIOUS ACTION, OR ARISING OUT OF OR IN CONNECTION WITH THIS AGREEMENT, INCLUDING WITHOUT LIMITATION ANY CLAIM FOR PERSONAL INJURY OR PROPERTY DAMAGE, ARISING FROM THIS AGREEMENT AND ANY VIOLATION BY YOU OF ANY FEDERAL, STATE, OR LOCAL LAWS, STATUTES, RULES, OR REGULATIONS, EVEN IF COMPANY HAS BEEN PREVIOUSLY ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. EXCEPT AS PROHIBITED BY LAW, IF THERE IS LIABILITY FOUND ON THE PART OF COMPANY, IT WILL BE LIMITED TO THE AMOUNT PAID FOR THE PRODUCTS AND/OR SERVICES, AND UNDER NO CIRCUMSTANCES WILL THERE BE CONSEQUENTIAL OR PUNITIVE DAMAGES. SOME STATES DO NOT ALLOW THE EXCLUSION OR LIMITATION OF PUNITIVE, INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE PRIOR LIMITATION OR EXCLUSION MAY NOT APPLY TO YOU.</p><ol type="1" id="969d922c-554a-4bd7-9e55-fd72399efd79" class="numbered-list" start="1"><li><strong></strong><span style="border-bottom:0.05em solid"><strong>Termination</strong></span></li></ol><p id="9ab55bd7-d50e-4db1-916f-f0f4269a5f59" class="">We may terminate or suspend your account and bar access to Service immediately, without prior notice or liability, under our sole discretion, for any reason whatsoever and without limitation, including but not limited to a breach of Terms.</p><p id="d3ba64d8-9991-4460-ab0e-f417d6e8dbf3" class="">If you wish to terminate your account, you may simply discontinue using Service.</p><p id="95023fd1-c011-496c-a0c3-60c1518b4df9" class="">All provisions of Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.</p><ol type="1" id="f7eb0b13-ef3e-4508-bf39-d62e8976268a" class="numbered-list" start="1"><li><strong></strong><span style="border-bottom:0.05em solid"><strong>Governing Law</strong></span></li></ol><p id="8956380c-d4bb-48d5-903d-047f37fe6777" class="">These Terms shall be governed and construed in accordance with the laws of State of Delaware without regard to its conflict of law provisions.</p><p id="b89687bb-8fb9-422a-bd7b-ceb17a8b0d0d" class="">Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our Service and supersede and replace any prior agreements we might have had between us regarding Service.</p><ol type="1" id="91f78de7-32d9-45a8-b6c9-12d03df58850" class="numbered-list" start="1"><li><strong></strong><span style="border-bottom:0.05em solid"><strong>Changes To Service</strong></span></li></ol><p id="15c3e238-a02a-4bfb-808d-8804357ab888" class="">We reserve the right to withdraw or amend our Service, and any service or material we provide via Service, in our sole discretion without notice. We will not be liable if for any reason all or any part of Service is unavailable at any time or for any period. From time to time, we may restrict access to some parts of Service, or the entire Service, to users, including registered users.</p><ol type="1" id="a2c38133-9184-4fd8-a486-9b71aacd7a96" class="numbered-list" start="1"><li><strong></strong><span style="border-bottom:0.05em solid"><strong>Amendments To Terms</strong></span></li></ol><p id="dded96d7-41a3-463d-84a0-0a08d60587be" class="">We may amend Terms at any time by posting the amended terms on this site. It is your responsibility to review these Terms periodically.</p><p id="ae16ea6e-ddc8-4508-aff0-04d01d5d5eba" class="">Your continued use of the Platform following the posting of revised Terms means that you accept and agree to the changes. You are expected to check this page frequently so you are aware of any changes, as they are binding on you.</p><p id="26828010-e838-4a5e-85cf-877535cfc41b" class="">By continuing to access or use our Service after any revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, you are no longer authorized to use Service.</p><ol type="1" id="516a1d9a-603e-4484-88f2-b07cb3ee7e97" class="numbered-list" start="1"><li><strong></strong><span style="border-bottom:0.05em solid"><strong>Waiver And Severability</strong></span></li></ol><p id="4a19f69a-aa7c-49fa-8bc6-2e74a03c8fb8" class="">No waiver by Company of any term or condition set forth in Terms shall be deemed a further or continuing waiver of such term or condition or a waiver of any other term or condition, and any failure of Company to assert a right or provision under Terms shall not constitute a waiver of such right or provision.</p><p id="1e190aa4-15ba-45d5-adae-214e9161c742" class="">If any provision of Terms is held by a court or other tribunal of competent jurisdiction to be invalid, illegal or unenforceable for any reason, such provision shall be eliminated or limited to the minimum extent such that the remaining provisions of Terms will continue in full force and effect.</p><ol type="1" id="806b6c32-a0ed-4083-996c-abaa456bbf04" class="numbered-list" start="1"><li><strong></strong><span style="border-bottom:0.05em solid"><strong>Acknowledgement</strong></span></li></ol><p id="d8ef323d-3a71-45b2-b898-98671887090a" class="">BY USING SERVICE OR OTHER SERVICES PROVIDED BY US, YOU ACKNOWLEDGE THAT YOU HAVE READ THESE TERMS OF SERVICE AND AGREE TO BE BOUND BY THEM.</p><ol type="1" id="1bcbca97-e834-4229-8ea7-ccf868a7a0b2" class="numbered-list" start="1"><li><strong></strong><span style="border-bottom:0.05em solid"><strong>Contact Us</strong></span></li></ol><p id="1356ddc9-1935-498a-9737-b308f9de4833" class="">Please send your feedback, comments, requests for technical support:</p><p id="1ba3e3a3-b0c6-44d0-a230-5a4d9ef5eba4" class="">By email: support@konarium.com.</p><p id="c33e8ad5-cf02-437c-8fbb-60f0c0725064" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

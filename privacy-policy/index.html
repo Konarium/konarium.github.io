@@ -1,0 +1,691 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Konarium Privacy Policy</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="f04da2f7-bb0d-420b-9746-148fe3315edc" class="page sans"><header><h1 class="page-title">Konarium Privacy Policy</h1><p class="page-description"></p></header><div class="page-body"><p id="8f717fc4-4cb9-4b11-9967-0780bb1a6feb" class="">
+</p><p id="9b8b06fd-dd96-4b26-970e-ec48b73e26ac" class=""><strong>Last Updated: March 8, 2024</strong></p><p id="03cbf4d6-62d4-4c96-9fdc-cea641763a91" class="">
+</p><p id="c116d013-5f22-4992-96eb-504e1359e3a6" class="">Konarium, LLC (“Konarium”, “us”, “our” or “we”) is a game and mobile application developer and publisher. We provide entertainment experiences to users worldwide via app stores and websites. This Privacy Policy (this “Policy”) outlines how we collect, use, store, and disclose or otherwise process the personal information of our users (“users” or “you”) in connection with our Services. It covers our products and services, including games (”Games”), advertising (”Ads”), and websites we control including <a href="https://www.konarium.com"><strong>https://www.konarium.com</strong></a> (”Website”) (each a “Service,” collectively, the “Services”), as well as the rights and choices concerning your information that may apply to you. Please note that this Policy is limited to information and data collected or received through your use of our Services and that it is not a contract and does not create any legal rights or obligations. Konarium is not responsible for the actions of third party people or companies, the content of their sites, the use of information or data you provide to them, or any products or services they may offer. Any link to those sites does not constitute our sponsorship of, or affiliation with, those people or companies. If you have any questions or concerns, please refer to the Contact Information section provided in this Policy.</p><p id="481e1bc2-0e0f-4189-a98b-72ea6b2fd26d" class="">
+</p><h1 id="553f55a6-5c20-4ec8-890b-d1fafeab6cba" class="">1. What Information We Collect</h1><p id="0925cb3e-ce1a-464c-ae67-7fe4f9974d82" class="">The majority of information we gather from you comes from your interaction with our games or ads displayed within our games or other publishers&#x27; games. This information includes details about the device you are using, identifying information related to the device, and information about your gaming activity. Additionally, we may collect information you provide us when you voluntarily contact us. We may also obtain information from third-party platforms and partners, such as your interests and in-app purchases, however, we never receive any payment or credit card information. We also do not strive to collect any information that can be used to contact or identify you directly, such as your full name, email address, postal address or phone number (“Personally Identifiable Information” or “PII”). </p><p id="4187da16-ec7f-4e24-8ca0-3cb126f521ae" class="">The information we collect can be categorized into three broad categories: </p><h2 id="901b7183-87b9-41b2-8c50-ac4e6e6a1e8b" class="">1.1 Information We Collect Directly From You</h2><p id="500cabb0-e5ac-4df5-ac0a-5656dbda06f6" class="">We may ask you to provide personal information voluntarily in certain parts of our services. This may include details necessary for us to process your inquiries, such as your name and email address, which you may submit to our support team via email. We will explain the personal information you are asked to provide and the reasons why we need it when we request it from you.</p><p id="c7fa5dc1-f6f7-459a-bb42-42e0f73adb0d" class="">When you use our services, you may also directly provide us with personal information, which we will store and process for the purposes described in our privacy policy. This information may include your game username or alias, profile photo or avatar, approximate location, details about the games and platforms you use, links to your social media profiles and ID number, information about your purchases, and personal information you provide when requesting help from our customer support team. If you create an account, we may collect your name, username, email address, password, and other information that helps us confirm your identity. We may collect information visible via your Facebook account if you sign in with Facebook Connect.</p><p id="f5b34119-7240-48d3-9629-9db6ddebbe9e" class="">If you ask for help from our customer support team, we will collect and store your contact information, information about your game-play or activity, and your username or ID number. We may also collect information about your interests and communication preferences that you choose to provide, such as when subscribing to news or alerts.</p><h3 id="8287bcca-8aa1-4ef9-8565-219713a2a990" class="">Note About Sensitive or Special Categories</h3><p id="8074291e-ca30-48ff-b86f-f43feec99351" class="">As a general practice, we do not ask for or intend to collect sensitive or special categories of information. However, there may be certain circumstances where you may choose to provide us with this information, such as when you contact our Customer Support team for assistance. It&#x27;s important to note that the definition of sensitive or special categories of information may vary by location and could encompass data such as health records, biometric information, race, religion, political opinions or philosophical beliefs, sexual preferences or orientation, genetic information, or precise location data.</p><h2 id="4a855c19-45b8-4b69-8d99-7e8972943338" class="">1.2 Information We Collect Automatically </h2><p id="4378ddc5-67ba-4606-80e9-99da3333d78c" class="">As you use our Services, we may collect certain information automatically from you and/or your device. This information may be considered personal information under applicable data protection laws and includes data and analytics about your use of our Services (such as in-game progress, levels, games played, session length, preferred settings, in-game adverts viewed, in-game references, and game preferences), your IP address, and device identifiers like Advertising ID and Device ID numbers. We also collect information about your device type and operating system, in-game communications with other players, and broad geographic location based on your IP address. Advertising ID is a unique identifier used for personalized advertising by advertisers and is consistent across all mobile applications, allowing cross-app tracking. On Apple, you can opt-out of Advertising ID by choosing the &quot;limit ad tracking&quot; option in your privacy settings. On Google Android, you can opt-out by choosing &quot;Opt-out of personalized ads.&quot; Device identifier/information includes technical data like screen size, processor, device type, model, maker, and operating system, or a combination of this data available from a device for a developer for checking the device compatibility with a particular application.</p><h3 id="d320fa40-0dc7-4885-a4ed-73629e827ed5" class="">Technical and Usage Information Generated from Using Our Services</h3><p id="8a646122-14bb-4d75-ab52-e84038739e70" class="">We will gather personal information about your use of our Services, including the duration and frequency of gameplay, interactions with other players and game features, purchases made, progress and levels achieved, and other gameplay activities. In order to identify your game account, we may create a player ID. If you use communication features to interact with other players, we will collect information on the communications and shared content. We may keep this content on our servers to enhance our Services, conduct research, manage and deliver advertising, and protect the safety and well-being of our players, as well as our rights and property. Our servers will automatically record certain data about your use of the Services, such as your IP address, device type, operating system, links and advertisements clicked on, and duration of interaction with the Services. This information is analyzed to improve and enhance the Services by expanding their features and functionality and tailoring them to your needs and preferences. We also use this data to generate aggregate, non-identifying information about how the Services are used, verify user eligibility for certain services, and monitor and analyze this data to increase our Services’ functionality and user-friendliness. If required by law, we will seek your consent for using this information.</p><h3 id="b0f76068-7de7-4a23-b64c-efb6962b9975" class="">Cookies and Other Similar Technologies</h3><p id="92e2cfae-3a6b-4720-838e-6af339de93b6" class="">Cookies are small data files that may contain an anonymous unique identifier. They are sent to your browser from a website and stored on your computer&#x27;s hard drive. We and our partners use cookies and similar technologies to provide and personalize the Service, analyze usage, target advertisements, and prevent fraud. Cookies allow us and our partners to store preferences and track activities within the Service. It&#x27;s important to note that our partners may have their own privacy policies.</p><p id="7a446f78-c6a5-45b2-8d37-c8b0b290f955" class="">We and our partners collect and store information about users&#x27; interactions with unaffiliated websites and applications that use our technologies, including cookies and similar tracking technologies. This allows us to identify a common user or household behind multiple devices or browsers and link those browsers and devices into a device graph. We do this to detect and prevent fraud, allow users to seamlessly use the Service across multiple devices, provide analytics, personalize content, limit the number of times a user sees the same advertisement across devices, and provide personalized advertising based on browsing patterns across devices.</p><p id="fc89a785-c02a-4391-b13d-62236e6a9f0d" class="">While you can instruct your browser to refuse all cookies or indicate when a cookie is being sent, doing so may limit your ability to use some features of our Service.</p><h2 id="d4fd03a9-4261-4077-a017-2bf7ea661481" class="">1.3 Information We Obtain from Third-Party Partners</h2><h3 id="d64331ff-c773-4263-abd0-c87653a4bbb8" class="">Payment Information</h3><p id="18218732-dfc2-497a-bd9c-e5c88fa26df0" class="">When you purchase any goods or services through our Services, including virtual currency or virtual goods, we collect certain non-financial transaction information, such as what was purchased, the price, and the date. Third-party payment processors, such as Apple for iOS devices, Google for Android devices, or Amazon for Kindle devices, process your in-app purchase transactions. These processors collect personal information like your name, phone number, email address, mailing address, billing address, and credit card information to facilitate payment processing. Your payment information may be retained by these processors for future purchases on our Services without requiring you to enter it again. However, please note that these third-party payment processors do not share your financial information, such as your credit card number, with us. It is important to note that their processing of transactions and collection and use of your personal information is governed by their terms of service and privacy policy. Additionally, any purchases made through these third parties may be subject to additional policies. We recommend that you review the terms of service and privacy policies of these third-party payment processors to learn more about how they handle your personal information.</p><h3 id="65b83a92-d7c7-4005-ac24-188eed149b11" class="">Information from Social Networks</h3><p id="ce13f7fa-bf42-4378-8f3d-cbf9b0a7cd29" class="">Some of our games use third-party services, such as Google Play Games Service, Apple Game Center, or Facebook. By using the &quot;Log in&quot; feature in our games, you can connect your third-party social network account to our app. You can also share the content you create within the app on third-party social networks. Please note that third-party social networks are governed by their own policies, and we are not responsible for their sharing practices or policies.</p><p id="529efeec-01af-4953-9c2b-2dd2711489d5" class="">The information you allow us to access will vary depending on the privacy settings you have established on the third-party social network. When you use the &quot;Log in&quot; feature, we may access and store some of your basic information from your public profile, login ID, list of friends, and any other information that is displayed to you during the &quot;Log in with&quot; process. We may also share your name and game data with your friends or contacts on the third-party social network.</p><p id="3ba91058-52d8-46d8-a22f-f28bd8936e70" class="">The app may also ask you to allow us to post on your behalf on third-party social networks, such as status updates. We will only do so if you specifically allow us to do so, and we will store your ID and full name for user identification purposes. Other information will be stored only on your device, so that the app can communicate with the third-party social network directly.</p><h3 id="89369478-35b6-48ed-97c3-3797b4365666" class="">Information from Advertising Partners</h3><p id="fbdab2e7-57e4-4200-9755-be78e4c36742" class="">We may receive your personal information from third-party sources, including advertising partners. This may occur if you clicked on an advertisement to direct you to one of our services, such as a game, prior to installing it. We will be provided with information about which ad network and advertising campaign the install originated from. (See below the &quot;Online Advertising&quot; section for more details).</p><h3 id="bea9d8dd-d7df-431b-8e8c-ead20d76a25e" class="">Information from Other Sources</h3><p id="54c0cc9f-551d-4d9a-8fb4-4b366f5095a5" class="">We collect information about you from third-party sources in addition to the information you provide us directly. This information is used to help you and your friends connect and to serve you more personalized advertising. The other sources we collect information from include other Service users who upload their email contacts, third-party information providers like digital advertising companies, and social networking sites. We may combine this information with the information we collect from you directly.</p><h1 id="82ecafa0-59f4-496b-ae94-911ace27aa70" class="">2. Why We Process Your Information</h1><p id="f5f0e70e-9053-4fc7-8768-9af016843099" class="">We process personal information for various reasons, including providing and improving our Services, protecting users and others, marketing and advertising our products and services, ensuring business continuity, and complying with legal obligations. The primary purpose of processing personal information is to provide and improve our Services, but we process your information for other reasons as well. These reasons include creating accounts and providing customer support, improving, optimizing and personalizing our Services, facilitating connections with other users and third-party platforms, communicating with users about our Services and promotional offers, conducting marketing research and analytics, administering rewards and promotional events, protecting user safety, managing business operations, preventing fraud and enforcing applicable terms of service. We may also cooperate with public authorities and law enforcement, protect our rights and administer agreements with third parties.</p><h2 id="4847e580-895e-4e34-923e-a14db99976aa" class="">Legal Bases for processing data</h2><p id="ba6f543c-5d32-4f64-8282-5526c6203db0" class="">The legal basis for collecting and using your information varies depending on what information we collect and the context in which we collect it, as well as applicable privacy laws. The following are the legal bases we rely on:</p><ul id="db180ed9-ba5c-4140-825b-22d020b0ce69" class="bulleted-list"><li style="list-style-type:disc"><strong>Contractual necessity:</strong> We may collect and use your information to fulfill our contractual obligations to provide you with our Services.</li></ul><ul id="aac18c4e-a1c4-4c7e-b77c-47a806f19adb" class="bulleted-list"><li style="list-style-type:disc"><strong>Legitimate interests: </strong>We may collect and use your information for our legitimate interests in providing and improving our Services, marketing and promoting our products and services, protecting our users and our Services, and complying with legal obligations.</li></ul><ul id="0e4c2ad6-d63c-49ea-96c5-fcf0a93f0cb0" class="bulleted-list"><li style="list-style-type:disc"><strong>Consent: </strong>We may collect and use your information based on your consent, which you can withdraw at any time.</li></ul><ul id="a6de689b-ef92-4770-ac88-a598ce2638e0" class="bulleted-list"><li style="list-style-type:disc"><strong>Legal obligations: </strong>We may collect and use your information to comply with our legal obligations, such as responding to legal process or requests from public and government authorities.</li></ul><ul id="1a39bceb-f93d-4cb4-82e5-f99d4b58e393" class="bulleted-list"><li style="list-style-type:disc"><strong>Vital interests: </strong>We may collect and use your information to protect the vital interests of you or others, such as in emergency situations.</li></ul><p id="517fd80a-7ced-4cfa-9110-72ac8550dbc4" class="">
+</p><h1 id="5b85934f-7376-4eff-9b7b-fa3874cb7731" class="">3. How We Use Your Information</h1><p id="0a3d4ead-be11-45cb-8d3e-2a8205a476be" class="">The information we obtain about you or your device is used for various purposes, including providing you with our services and games, managing our business operations, and enhancing security measures. We use it to improve our services and games, conduct analytics and research, and ensure that you receive the best possible experience. Additionally, we may utilize your information to advertise our services and games within our own games or other apps, as well as to display third-party ads. We also employ your information to prevent fraud and track advertising, as well as to fulfill our legal obligations.</p><h3 id="a0893834-a210-453e-a7cc-1110400d9ba4" class="">For Service Delivery and Improvement</h3><p id="60e89c60-fcf3-4f37-8c5d-5a3a7a938191" class="">We utilize the information we collect from you to provide and improve our services, products, and content. We may use the information for creating and maintaining your account, identifying and suggesting connections with other users, operating and improving our services, troubleshooting technical issues, analyzing trends in game usage, and administering our games.</p><p id="5d85d053-2e85-4b7b-ae6c-b32aece18ae5" class="">We also use your information to understand your preferences and enhance your experience using our services, respond to your inquiries, provide customer service, and deliver the products and services you request. Moreover, we may send you related information such as confirmations, invoices, technical notices, updates, security alerts, and support and administrative messages.</p><p id="93d45d1f-753b-4066-b550-dcb8c26e0236" class="">We may also conduct surveys, user research projects, competitions, and promotional events that you participate in. Additionally, we use your information to prevent fraud or any potentially illegal activities, to enforce our terms of use, and to enable communication between users. Finally, we may use your information for any other purpose for which you provide your personal information.</p><h3 id="0309dd66-365a-443e-889a-0cf3e65bee64" class="">Marketing and Advertisement</h3><p id="b98619e2-b15b-42d0-bfee-e72d5791891c" class="">As part of our advertising and marketing efforts, we may use your information to show advertisements for our Games in other publisher&#x27;s apps, as well as to display third-party advertisements within our Games. For more details on this, please refer to the “Online Advertising” section of our Privacy Policy. Additionally, we may use your information to deliver targeted advertising and promotional information to you, and to communicate with you via email and push notifications about upcoming events, promotions, contests, rewards, and other news related to our products and services, as well as those offered by our selected partners.</p><h3 id="299fe2a3-fad6-4ee1-988e-63c720b30b11" class="">Cross Promotion</h3><p id="a44bfd91-df00-411d-a7ee-f7d3ceca3287" class="">We utilize your personal information to engage in cross-promotion, which involves advertising one of our games while you are playing a different game from our collection.</p><h3 id="84477e4f-932a-442a-96e4-424f258aba4f" class="">Tracking and Fraud Prevention for Advertising Campaigns</h3><p id="1526095b-eee8-45c4-b9d1-1874b902bed2" class="">We may utilize your information to track the performance of our advertising campaigns and to prevent any fraudulent activities that may occur during such campaigns.</p><h3 id="4597d85f-5970-4b21-a40b-f1198f4e4c6f" class="">Analytics, Research, and Development</h3><p id="518dd6b0-3417-46c2-98d9-85a3a04628f3" class="">We use your information for various purposes related to analytics, research, and development. This includes analyzing trends related to the usage of our Games and gathering demographic information about our user base. We also collect data about where the Game was downloaded from. We may create reports and analysis to track potential problems or trends with our Games and services or to test new game features and content.</p><p id="8e96fc6a-aa04-49e4-8f27-24007812bc71" class="">Furthermore, we may create aggregate or anonymous information derived from the personal information we collect, which we may use and disclose for research, development, and other lawful business purposes. We may also link or combine personal information with other information we get from third parties to better understand your preferences and provide you with better services. We analyze the information you provide to us in connection with Studio surveys and user research projects to gain insights into how users engage with our Services, to improve our Services, and to consider developing new products or services, among other lawful purposes.</p><h3 id="4a71cffb-3aad-40a1-8c9f-61bd63d225d3" class="">Compliance and Protection</h3><p id="015ee9cd-5e87-4b48-9aec-76a6ffcd1b16" class="">The use of your information is also intended to comply with applicable laws, lawful requests, and legal process, including responding to subpoenas or requests from government authorities. We use your information to protect our, your or others’ rights, privacy, safety or property, which may involve investigating, bringing, making or defending legal claims. Furthermore, we audit our internal processes to ensure compliance with legal and contractual requirements or our internal policies. The terms and conditions that govern the Services are enforced through the use of your information. Additionally, we use your information to prevent, identify, investigate and deter fraudulent, harmful, unauthorized, unethical or illegal activity, including cyberattacks and identity theft.</p><h3 id="bd7fa079-f11f-4198-b92a-024cd5e60544" class="">Push Notifications</h3><p id="0e551e63-e96d-4f6e-af22-33978e709760" class="">Occasionally, we may use push notifications to send you game updates, high scores, and other service-related notifications that may be important to you. You have the option to opt-out of receiving these types of communications by turning them off at the device level through your settings at any time.</p><h3 id="bcecefeb-8b81-4833-b9af-061d6ad4bcc2" class="">Customer Support</h3><p id="d1c0c561-bc22-44a5-888d-597bd8b7c224" class="">We use your information to provide customer support to you, as well as to answer your inquiries.</p><p id="ba9e03dd-653b-43f2-b736-84d8c991b16e" class="">
+</p><h1 id="067ecbfb-6f8f-4a33-b22e-ea238034ed88" class="">4. How We May Share Your Information</h1><p id="95f50062-5b96-45d4-a671-a64168fa017e" class="">We acknowledge that we cannot provide all services required for the successful operation of the Games independently. Therefore, we may share collected information with third parties to deliver our services, display advertisements, conduct analysis and research, and measure our and our Partners&#x27; advertising campaign performance. In certain circumstances, we may also disclose your information, including personally identifiable information, when legally required to do so, or disclose your information in an anonymous and aggregated form so that it cannot be traced back to you.</p><p id="3d2e29ed-093c-4116-8c3c-2b6702740501" class="">Third Parties We Share Information With</p><ul id="bda55cc4-ef2f-4fb2-835f-5ae72b23077e" class="bulleted-list"><li style="list-style-type:disc"><strong>Analytics Providers:</strong> We use third-party analytics providers like Facebook, Unity, and Firebase to deliver our services, conduct analysis and research. We may share encoded device data with these providers, and they may assign a random ID to these data. We can aggregate the data for benchmarking features, and you can contact us for a complete list of our analytics service providers.</li></ul><ul id="9ab4290d-414b-4285-8881-90cb2f3481d6" class="bulleted-list"><li style="list-style-type:disc"><strong>Cloud Service Providers:</strong> We store the information we collect from you on servers provided by our third-party cloud service providers like iCloud, Google Cloud Platform, and Firebase.</li></ul><ul id="b25c6bcb-bc59-4dac-a7c1-8c604736836c" class="bulleted-list"><li style="list-style-type:disc"><strong>Tracking and Fraud Prevention Providers:</strong> We use tracking and fraud prevention providers such as AppsFlyer, Kochava, and Tenjin for certain Games to measure performance, optimize our advertising campaigns, display advertisements, conduct analysis to improve our services, and prevent fraud. These providers may use APIs and SDKs in our Games to collect and analyze user and device-related data and information such as impressions, clicks, installs, or other advertising campaign performance indicators and post-install in-app events.</li></ul><ul id="f3b86784-02de-4837-b525-9d020c9c89a3" class="bulleted-list"><li style="list-style-type:disc"><strong>Third-Party Advertising Partners:</strong> We work with third-party advertising networks that help us deliver advertising to you, which enables us to offer the Games for free or at low cost. Our third-party advertising partners include advertising providers listed below in the Advertising Section of this Privacy Policy.</li></ul><ul id="d293e856-744f-45a5-ad74-ded31801e838" class="bulleted-list"><li style="list-style-type:disc"><strong>Advertising Partner&#x27;s Third-Party Tracking Provider:</strong> We allow our advertising partners to track impressions, clicks, installs, or other advertising campaign performance indicators through their tracking providers to measure their advertising campaign performance. They may use their own third-party tracking providers.</li></ul><ul id="d37cea14-c3a4-43f8-8deb-4b5e2046bbc8" class="bulleted-list"><li style="list-style-type:disc"><strong>Other Third-Party Service Providers:</strong> We use Unity Software to develop some of our Games. For data processing by Unity, please refer to Unity&#x27;s privacy policy. We also partner with third-party development studios for some Games, and they do not have access to your personal information, only aggregated data that they cannot trace back to you.</li></ul><p id="e1db138b-ba3a-4f5a-b92c-ed96f8765809" class="">We may enter into contracts with additional Partners or make changes to existing Partners in the future to perform any services related to the Games. These changes will be updated promptly, or from time to time, in the case of material changes to our data processing practices.</p><p id="c7f6eefa-c518-40fb-b895-ccd0bee77de0" class="">
+</p><p id="925f0628-d454-41ee-819e-b14b5f9fd186" class="">We reserve the right to disclose your information, including personally identifiable information, in response to law, legal process, litigation, and/or requests from public and governmental authorities within or outside your country of residence. We may also disclose information about you if we determine that the disclosure is necessary or appropriate for national security, law enforcement, or other issues of public importance. Additionally, we may disclose information about you if we determine that disclosure is reasonably necessary to enforce our terms and conditions or to protect our operations, users or user experience. Additionally, in the event of a reorganization, merger or sale we may transfer any and all information (including personally identifiable information) we collect to the relevant third party.</p><p id="be0eda38-7362-466a-8b95-203f1283eda1" class="">For any additional questions about third-party information collection, please contact us.</p><p id="67f86b24-f34a-47fa-8ff0-2075db87cbb6" class="">
+</p><h1 id="6bdcbb93-6d44-4c50-8c66-563be6f3fd6f" class="">5. Online Advertising</h1><p id="292a6a10-14c1-4b14-a5d1-9de00f06d1f8" class="">We rely on advertising to fund our services and offer our games for free or at a low cost. To achieve this, we need to share information collected from users with our third-party advertising partners. We only store personal information temporarily to protect privacy. The information collected is used to improve our websites and games while keeping them free for all players.</p><p id="7d45bdd5-48d8-4ce7-bc5b-8349d5190d53" class="">For users based in the European Economic Area (EEA), we show advertisements based on legitimate interest according to Art. 6 para. 1 lit. f GDPR. We have also concluded data processing agreements with external ad technology providers networks in accordance with Art. 28 GDPR, and our service providers are committed to a high level of data protection.</p><p id="6afd6e41-d180-4c3b-ba4f-cbb41bfbcc69" class="">Before sharing any information with advertising partners for personalized advertising, we ask for user consent, which can be given by pressing &quot;Accept&quot; at the relevant pop-up window when loading the game. Only when consent is given, advertising partners are allowed to show personalized ads. The legal basis for showing personalized ads to EEA-based users is consent under Art. 6 para. 1 lit. a GDPR. We have also concluded data processing agreements with external ad technology providers networks in accordance with Art. 28 GDPR, and our service providers are committed to a high level of data protection.</p><p id="05a9caad-238a-4855-852d-5eb9661e6517" class="">Users have the option to withdraw their consent to sharing personal information for the purposes of personalized advertising at any time. This can be done by going to the game settings, clicking the &quot;terms &amp; privacy&quot; button, and managing preferences in the &quot;Personalized Ads Consent Withdrawal&quot; section of the privacy policy. If consent is withdrawn or not provided, users may still see the same number of ads on their mobile devices, but these ads may be less relevant. Advertising partners may continue to show ads based on the content of the application being used.</p><h3 id="64b27ed0-03b2-4c04-b59b-87c92d0c41c5" class=""><strong>Interest-Based Advertising</strong></h3><p id="00e7a045-9b7e-423e-89c8-12411e5ff96e" class="">If we choose to display advertisements on our Services, and if required by applicable law, we may share information about your use of our Services with online advertising networks, social media companies, and other third-party services. This sharing allows these entities to display ads on our Services, other devices you may use, and other websites, apps, or services. We may share this information through tracking technologies such as cookies, software integrations, or similar methods, which are used to identify the device you are using. Our third-party partners may use this information to personalize ads and to provide advertising-related services such as reporting, attribution, analytics, and market research. We may share the following information:</p><ul id="c65197a2-c5c9-464e-8ab9-349b02be75a5" class="bulleted-list"><li style="list-style-type:disc">Details about your device, such as the make, model, and operating system;</li></ul><ul id="3afaa89d-fe6f-4403-bcc7-d6563d4c2eda" class="bulleted-list"><li style="list-style-type:disc">Information about your device properties, such as screen size, orientation, audio volume, and battery;</li></ul><ul id="6a61ea62-1e17-4f97-9a8b-9c2251967b68" class="bulleted-list"><li style="list-style-type:disc">Your carrier and operating system;</li></ul><ul id="830f9ea4-018b-4002-8f70-e1e6a6e5248a" class="bulleted-list"><li style="list-style-type:disc">The name and properties of the mobile application you use to interact with our Services;</li></ul><ul id="1188974c-9326-44e8-9a3b-4c2043238620" class="bulleted-list"><li style="list-style-type:disc">Your country, time zone, and preferred language settings;</li></ul><ul id="ee949b25-1ba4-412a-a35c-196d7340cbb0" class="bulleted-list"><li style="list-style-type:disc">Information about your network connection, such as its type and speed;</li></ul><ul id="feddebd7-a6bb-45f9-a0a9-cbd2cc8ac90a" class="bulleted-list"><li style="list-style-type:disc">Your IP address;</li></ul><ul id="12d37b81-f9c0-41c0-b4e7-2a654108fc8f" class="bulleted-list"><li style="list-style-type:disc">Your gender and any relevant keywords;</li></ul><ul id="22ca6298-cb71-432b-88e3-463fa89022e8" class="bulleted-list"><li style="list-style-type:disc">Geolocation data at the city and/or country level;</li></ul><ul id="3fc173d3-9c0c-4ab4-a28f-d47f7b692a8b" class="bulleted-list"><li style="list-style-type:disc">The user-agent of the internet browser you use to access our Services; and</li></ul><ul id="f80a04b4-b11d-449c-9d3e-83e318eac66d" class="bulleted-list"><li style="list-style-type:disc">Your Advertising ID (IDFA on iOS devices and GAID on Android devices).</li></ul><h3 id="445de752-7f98-4f72-bd01-a04cfb069931" class=""><br/><br/><strong><strong><strong>In-Game Advertising</strong></strong></strong></h3><p id="9457c449-b0ca-429f-a5ce-49d0a96c2781" class="">To display in-game ads, we may send your advertising ID, IP-address and other information to advertisers or ad networks. These entities will use your information to find suitable ads to display in our games and on third-party platforms. You can control and limit our use of your advertising ID in your device settings. However, please note that we do not have control over which specific ads are displayed as that is determined by the ad network. We do, however, blacklist certain categories of ads.</p><p id="4301858b-bac7-40c2-98e9-50038bf2eeb5" class="">Ad networks use advertising IDs for several purposes, including limiting the number of times you see the same ad and verifying that you are a human using a real device rather than an automated bot. They also serve ads that are likely to be relevant to you based on your advertising ID engagement with other brands and ads, recorded using your advertising ID and your general geographic area. Other brands purchase advertisement placement via ad networks or ad exchanges to advertise their products in our games. The ad network or exchange acts as an intermediary between the other game companies and us. To charge the company buying the ad, clicks from the ad and potentially installs of other developers’ applications party apps are tracked. Views, clicks, and installs from ads are measured using Advertiser ID.</p><p id="1bbcdc52-bade-40da-be7c-97f4f5b757b2" class="">IP addresses are used by advertisers to identify your general geographic area, such as your country, state, and city. This information is used to track which games you have used and to market similar kinds of games to you. Please refer to the privacy notices of our advertising partners listed on our website for more information on how they use your information.</p><h3 id="bceb5314-bac6-41cc-9e19-5db1c8ae9f07" class=""><strong>Our Ads in Third-Party Services</strong></h3><p id="4e2651d7-4dcb-4059-968f-e34ce9e42a73" class="">We promote our games on other mobile applications by requesting ad networks to display our games to relevant audiences based on their Advertising IDs.</p><p id="188d076f-f1dc-4336-a79f-fae25d49fda1" class="">The ad networks use Advertising IDs for several reasons (refer to the Privacy Notices of our advertising partners listed under “Third Parties”), including:</p><ul id="7b9332d1-f77a-4b93-88f7-ce7bb676ce29" class="bulleted-list"><li style="list-style-type:disc">gauging ad effectiveness by examining the number of views, clicks, and installs they generate through their advertising campaigns in other games;</li></ul><ul id="5d1ec960-24b3-400d-b71a-8d42f1165b45" class="bulleted-list"><li style="list-style-type:disc">notifying players who have not played in a while about new content in the game. We provide a list of these players&#x27; Advertising IDs to the ad network, which then shows them ads about the new content;</li></ul><ul id="5dabdfb7-e419-412e-ab87-451561bd03e6" class="bulleted-list"><li style="list-style-type:disc">avoiding displaying ads in a game that a player is currently playing. We can submit a list of active players in the form of Advertising IDs to an ad network, which then excludes these players from seeing the ad;</li></ul><ul id="5bcda5c9-c0f1-4ca2-846f-eaa6ca7bb19e" class="bulleted-list"><li style="list-style-type:disc">advertising games to potential players who may be interested.</li></ul><h3 id="0a995ceb-0d29-4f58-aba6-c74b98f0af45" class=""><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>Social Media Widgets</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></h3><p id="2016fb17-b231-4262-94ab-ba5126d5fbe1" class="">Our Service might have social media functions, such as Facebook button, Google, Instagram, Twitter, or other widgets. These social media providers may identify you and collect data about your visit to our Services. They might also use cookies or other tracing technologies. Social media companies offer interest-based advertising programs that let us send advertisements to users who have shown an interest in our Services while they are on the social media platform. We might also direct ads to groups of other users who share similar traits such as commercial interests and demographics. The way you interact with these features is controlled by the privacy notices of those social media companies.</p><h3 id="845f9731-1a6e-4d42-abf7-d987bc9fa7d5" class=""><strong><strong>Advertising Partners</strong></strong></h3><p id="cf6e7c60-8d6e-4f7f-8ef5-ffd505f04f53" class="">Please contact us to obtain a complete list of advertising providers that are authorized to display customized advertising and to review their data processing practices, including the technologies they use for the purpose of personalized advertising.</p><h3 id="e21a37a6-96ab-4f75-a71b-8e22177bd170" class=""><strong>Opting-Out of Interest-Based Advertising</strong></h3><p id="a28797f9-7f8f-4c1d-bc18-29cae895a8eb" class="">There are options available to opt-out of interest-based advertising using your device settings, in addition to any specific instruments provided to EEA-based users through the game. For iOS users, go to the &quot;Settings&quot; application, select &quot;Privacy,&quot; then &quot;Advertising,&quot; and activate &quot;Limit ad tracking&quot; to restrict the collection of your information. You can also reset your Advertising Identifier (IDFA) to create a new one that is not associated with your previous data. Android users should open the &quot;Settings&quot; application, select the &quot;Google&quot; menu (use the search function if needed), then choose &quot;Ads&quot; and enable &quot;Opt-out of Ads Personalization&quot; to prevent the creation of advertising profiles. Similarly, you can reset your advertising ID at any time to generate a new one that will not be merged with your previous data.</p><p id="6348cda5-03c7-4ed6-99e8-09dbe5a2002b" class="">
+</p><h1 id="2d57bed6-47ea-4444-b126-a4c998e1fc30" class="">6. Children’s Privacy</h1><p id="3e401a40-4249-49ae-858f-845c299eb65f" class="">Protecting the privacy of children online is an important aspect of our Services. Our services are not intended for use by children under the age of 13 (or under 16 in certain jurisdictions in the European Union) (&quot;Children&quot;). We do not knowingly collect personally identifiable information from Children. If you believe that your child has provided us with personal information, please contact us immediately. If we discover that we have unintentionally collected personal information from a child without parental consent, we will take steps to remove that information from our servers. We take measures to comply with the different minimum age requirements established by the laws of individual regions to determine which features of our services can be accessed by children.</p><p id="effb48aa-d0b0-4588-82ee-400377502b3d" class="">
+</p><h1 id="a4c0d1f2-3df8-4f77-85cd-7b9ab024fe77" class="">7. User Rights</h1><p id="b1c69576-32f1-48be-a510-663fd46c1283" class="">Depending on what privacy laws apply to you, you and/or your legal representative have certain rights regarding the personal information that we collect about you. These rights may include:<div class="indented"><ol type="1" id="4015a3ab-a79a-4436-b422-fc0fb8a1aff8" class="numbered-list" start="1"><li><strong>Right to Access:</strong> You have the right to request access to the personal information that we hold about you. We will provide you with a copy of the information free of charge and within a reasonable timeframe.</li></ol><ol type="1" id="64d5ef84-2e56-4438-9398-edc15b729194" class="numbered-list" start="2"><li><strong>Right to Rectification:</strong> If you believe that the personal information we hold about you is inaccurate or incomplete, you have the right to request that we correct or update it.</li></ol><ol type="1" id="bbb6e9a4-2339-431c-8fe4-ba8ea4089a75" class="numbered-list" start="3"><li><strong>Right to Erasure:</strong> You have the right to request that we delete your personal information in certain circumstances, such as when it is no longer necessary for us to hold it for the purposes for which it was collected, or when you withdraw your consent.</li></ol><ol type="1" id="d89e79dc-d1a4-443b-b748-ced9125e4eec" class="numbered-list" start="4"><li><strong>Right to Restrict Processing:</strong> You have the right to request that we restrict the processing of your personal information in certain circumstances, such as when you contest the accuracy of the information, or when the processing is unlawful, but you do not want us to delete it.</li></ol><ol type="1" id="64566a15-2529-455b-9b53-9be3307fa391" class="numbered-list" start="5"><li><strong>Right to Data Portability:</strong> You have the right to request that we provide you with a copy of the personal information that you have provided to us, in a structured, commonly used, and machine-readable format, and to request that we transmit it to another data controller.</li></ol><ol type="1" id="e030d367-f05e-4642-9f20-8f0427b0813c" class="numbered-list" start="6"><li><strong>Right to Object:</strong> You have the right to object to the processing of your personal information in certain circumstances, such as when we are relying on our legitimate interests as the legal basis for processing, and you believe that your fundamental rights and freedoms outweigh our legitimate interests.</li></ol><ol type="1" id="3cc475e8-7544-4ca1-8460-a54dcb45b4e8" class="numbered-list" start="7"><li><strong>Right to Make a Complaint:</strong> If you believe that we have violated your rights under applicable data protection laws, you have the right to complain to a data protection authority about our collection and use of your personal information. Please contact us first so we can try to resolve your concerns. If we are unable to address your concerns, you may also have the right to seek judicial remedy or lodge a complaint with the relevant data protection authority. We will cooperate with the data protection authorities to the extent required by law.</li></ol><p id="ff4742d5-49b6-44aa-b7cf-b0a1caa1edc6" class="">If you wish to exercise any of these rights, please contact us using the contact details provided in this Privacy Policy. We will respond to your request within a reasonable timeframe and in accordance with applicable laws and regulations. We will ensure that your request is communicated to other entities that have access to your personal information wherever applicable, unless it is impractical or requires excessive effort. If you want to know the identity of these recipients, you can contact us using the information provided in this policy. Please note that we may need to verify your identity before we can process your request.</p><p id="4cbbc7d2-ab36-441e-b6f6-b18969ed533c" class="">
+</p><h3 id="3c55764e-1351-4cb8-9ba8-65956a62bdb4" class=""><strong>Opt-out of Receiving Marketing Emails and Other Direct Marketing</strong></h3><p id="a7f0676e-3eff-4d43-8a77-3b64adc4a02a" class="">You have the right to opt-out of receiving marketing communications from us by following the instructions in the marketing emails we send you or by contacting us directly. Even if you opt-out of receiving marketing messages, we may still need to contact you for administrative or transactional purposes, including but not limited to customer service issues, order confirmations, important notices about the Services, and other non-marketing purposes.</p><h3 id="22f87f50-e4f8-45af-8854-2e35fc57ab18" class=""><strong>Management of Data from Third Party Apps and your Mobile Devices</strong></h3><p id="7d5dc3cb-14c1-438a-bb48-573b4d71d3f3" class="">We may collect information from third-party apps and services that you connect to the Services, such as social media networks or mobile devices. You can manage and control the information shared with us by these third-party apps and services by adjusting your privacy settings on those platforms or by deleting those apps from your mobile devices. We encourage you to review the privacy policies and settings of these third-party apps and services before connecting them to the Services.</p><h3 id="f2d03f7f-0827-46fa-a3f3-572230394ab7" class="">Push notifications </h3><p id="f1835336-04b7-4d37-84aa-f702422c05e1" class="">If you have installed our mobile app, we may send push notifications to your mobile device to provide you with updates about our Services. You can control these notifications from your mobile device settings or from within the mobile app settings. You may also be able to control push notifications through your device&#x27;s operating system settings.</p><h3 id="9b93695f-db8b-4bd5-8aeb-2c3340d194fe" class="">Opt-out of Targeted Advertising</h3><p id="78586c52-2d8e-43f1-bbd6-53414b887c9b" class="">We and our third-party partners may use cookies and other tracking technologies to collect information about your online activities over time and across third-party websites or other online services in order to serve you with targeted advertising based on your interests and browsing history. You can opt-out of receiving targeted advertising from us or our partners by adjusting your browser settings or by using third-party opt-out tools, such as the Digital Advertising Alliance&#x27;s opt-out page or the Network Advertising Initiative&#x27;s opt-out page. Please note that even if you opt-out of receiving targeted advertising, you may still see advertisements from us that are not based on your interests or browsing history.</p><h3 id="7888051f-5456-4f17-b8ad-96224696741b" class=""><strong>CCPA Policy</strong></h3><p id="3351fb83-5fe2-435b-a37d-71ba4f247538" class="">Under the CCPA, among other rights, California consumers have the right to:</p><ul id="8e436b63-3aeb-44b8-9508-20a10a6b535f" class="bulleted-list"><li style="list-style-type:disc">Request that a business that collects a consumer&#x27;s personal data disclose the categories and specific pieces of personal data that a business has collected about consumers.</li></ul><ul id="92b6e4ac-86c0-4e6e-b6f3-eca1f2b12336" class="bulleted-list"><li style="list-style-type:disc">Request that a business delete any personal data about the consumer that a business has collected.</li></ul><ul id="1b20ea3f-45fb-4daa-bfd9-66b518243dd5" class="bulleted-list"><li style="list-style-type:disc">Request that a business that sells a consumer&#x27;s personal data, not sell the consumer&#x27;s personal data.</li></ul><p id="e81010f9-b2a4-4c75-bc91-ca86cd0ba865" class="">If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p><p id="c44f9c2f-80c4-4dfc-bf2d-cedd67b8a754" class="">
+</p><h1 id="c142d008-286d-4e92-95bf-9ed6642d097e" class="">8. Data Security</h1><p id="0d576b9b-1718-4846-a0f3-40275f358175" class="">We take the security of your personal information seriously and implement reasonable and appropriate technical and organizational measures to protect it against accidental or unlawful destruction, loss, alteration, or damage. We continuously review and enhance our security measures to keep up with the evolving threats in the industry.</p><p id="7792c94b-565f-4fe9-9870-db71e474d5b5" class="">However, despite our best efforts and the measures we implement, it&#x27;s important to note that no security system is perfect or completely impenetrable. As such, we cannot guarantee the absolute security of your personal information, and any transmission of information is done at your own risk. </p><p id="8ed9c8cf-89e3-4768-801c-b8bd0c7973bb" class="">
+</p><h1 id="b52552e3-2726-481f-88f0-024182cc0ed2" class="">9. Data Retention</h1><p id="83b72122-df44-4471-938b-3d914b1469de" class="">We retain your information for as long as necessary to provide you with our services and delete it once we no longer need it for the purposes described in this Privacy Policy. We also retain data as required by law. If you request us to delete your data, we will do so as described in the &quot;Your Rights&quot; section.</p><p id="761e1795-87de-4a3d-afba-abd414b33717" class="">Your information may be stored on servers in the U.S. or other countries where our affiliates, subsidiaries, agents, contractors, or service providers maintain facilities. We retain your personal information for as long as needed to provide you with our services and comply with legal obligations. We may use the data for statistics, but it will be pseudonymized or anonymized to protect your privacy. We will not keep your personal information longer than necessary for these purposes.</p><p id="f8d15a47-0231-4512-b28b-c8f8ac6e01c7" class="">
+</p><h1 id="a0bd1c0c-b3a3-4a21-a574-074094074081" class="">10. International Data Transfer </h1><p id="0e69149a-471a-470f-b355-6120c25e1ad6" class="">Due to the global nature of our Service, your data may be transferred to and processed in countries different from your country of residence, which may have different data protection laws. However, we have implemented adequate safeguards as described in our Privacy Policy to ensure the protection of your data during transfer. We may also transfer your information to affiliated entities or third parties across borders, and we take necessary steps to ensure appropriate safeguards are in place to facilitate such transfers to other countries, including the United States.</p><p id="7b96da09-41cc-48e0-bd43-dbefab673193" class="">
+</p><h1 id="e47489b8-0336-431f-b7d6-63468c23c01d" class="">11. Changes to This Policy </h1><p id="70439683-86a3-46e5-b801-3566b20fada4" class="">Our Privacy Policy may be updated periodically to reflect changes in our privacy practices. The “last updated” date at the top of the policy will indicate the latest version. If we make significant changes, we will provide notice by placing a notice on our website or in our games or by sending an email to your registered address. The most current version of this Privacy Policy will govern our use of your information. Please review this Privacy Policy regularly to stay informed of any updates. </p><p id="51d282ea-3bcf-4878-a1df-34414dfe416a" class="">
+</p><h1 id="a813d632-ec47-40f1-b2a8-4f354b8368d4" class="">12. Contact Us </h1><p id="4685b3f4-4888-424d-88b7-e48c5f8ab1ec" class="">For inquiries regarding data protection or resolution of personal data issues, we recommend contacting us through the support features within our games to ensure a prompt response. Alternatively, you may reach us by email at <strong><a href="mailto:support@konarium.com">support@konarium.com</a></strong><strong> </strong>for any questions, comments, or concerns about our Privacy Policy and privacy practices.</p></div></p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
